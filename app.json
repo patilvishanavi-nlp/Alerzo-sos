@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "Alerzo",
+    "slug": "alerzo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "alerzo",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.alerzo.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Alerzo needs your location to send emergency alerts with your precise coordinates.",
+        "NSContactsUsageDescription": "Alerzo needs access to your contacts to add trusted emergency contacts."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#D32F2F",
+        "foregroundImage": "./assets/images/icon.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.alerzo.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "READ_CONTACTS",
+        "SEND_SMS"
+      ]
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#D32F2F",
+          "dark": {
+            "backgroundColor": "#121212"
+          }
+        }
+      ],
+      "expo-web-browser",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Alerzo needs your location to send emergency alerts."
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Alerzo needs access to your contacts to add trusted emergency contacts."
+        }
+      ]
+    ],
+    "experiments": {
+      "reactCompiler": true
+    }
+  }
+}
