@@ -1,7 +1,7 @@
 # Alerzo - Emergency Assistance App
 
 An offline-first emergency assistance mobile application designed for rural and low-connectivity regions in India. Built with React Native (Expo).
-
+https://alerzo-sos.replit.app
 ## Features
 
 ### Authentication & Sync
